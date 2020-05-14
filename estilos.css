@@ -1,5 +1,5 @@
 :root{
-  --color-header: #001789;
+  --color-header: black;
   --color-nav: #00ece9;
   --color-section: #008bb4;
   --color-aside: #e4ffff;
@@ -30,7 +30,7 @@ body{
 }
 
 .logo{
-  width: 60%;
+  width: 70%;
   vertical-align: middle;
 }
 
@@ -77,11 +77,13 @@ body{
   }
 
   .main-container-section{
-    width: 70%;
+    /* width: 70%; */
+    flex-basis: 70%;
   }
 
   .main-container-aside{
-    width: 30%;
+    /* width: 30%; */
+    flex-basis: 30%;
   }
 }
 
