@@ -1,8 +1,8 @@
 :root{
-  --color-header: black;
-  --color-nav: #00ece9;
-  --color-section: #008bb4;
-  --color-aside: #e4ffff;
+  --color-header: #466DC7;
+  --color-nav: #FF9A46;
+  --color-section: #34BBBB;
+  --color-aside: #FFC146;
   --color-footer: brown;
   --color-white: white;
   --color-black: black;
@@ -56,13 +56,19 @@ body{
 }
 
 .nav-container-item{
+  text-decoration: none;
+  color: white;
   text-align: center;
   line-height: 2.5;
   border-bottom: 1px solid var(--color-white);
 }
 
 .nav-container-item:hover{
-  background-color: #00dada;
+  background-color: #FCCBA3;
+}
+
+a{
+  color: white;
 }
 
 .nav-container-link{
