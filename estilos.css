@@ -1,7 +1,7 @@
 :root{
   --color-nav: #FFC146;
   --color-section: #34BBBB;
-  --color-aside: #466DC7;
+  --color-aside: rgb(20, 43, 97);
   --color-footer: brown;
   --color-white: white;
   --color-black: black;
@@ -143,7 +143,7 @@ a{
 .main-footer{
   background-color: var(--color-nav);
   color: var(--color-white);
-  line-height: 5;
+  line-height: 2.5;
   text-align: center;
   /* margin-top: auto; */
 }
