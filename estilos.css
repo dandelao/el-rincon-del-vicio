@@ -80,6 +80,7 @@ a{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100vw;
   background-color: var(--color-black);
   height: 50vh;
   display: flex;
@@ -89,7 +90,7 @@ a{
 }
 
 .main-container-grid{
-  width: 95%;
+  width: 90vw;
   background-color: var(--color-aside);
   display: grid;
   justify-content: center;
