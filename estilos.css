@@ -92,7 +92,7 @@ a{
 
 .main-container-grid{
   width: 90vw;
-  background-color: var(--color-aside);
+  /* background-color: var(--color-aside); */
   display: grid;
   justify-content: center;
   align-items: center;
