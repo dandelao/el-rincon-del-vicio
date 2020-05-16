@@ -101,6 +101,17 @@ a{
   padding: 20px;
 }
 
+@media only screen and (max-width: 700px){
+  .main-container-grid{
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .main-container-section{
+    height: 25vh;
+  }
+}
+
 .box {
   background-color: var(--color-aside);
   margin: 10px;
