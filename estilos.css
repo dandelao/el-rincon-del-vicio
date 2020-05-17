@@ -1,17 +1,17 @@
 :root{
   --color-nav: #FFC146;
   --color-section: #34BBBB;
-  --color-aside: black;
   --color-footer: brown;
   --color-white: white;
   --color-black: black;
 }
 
 *{
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body{
@@ -26,13 +26,11 @@ body{
 .main-header{
   background-color: var(--color-nav);
   color: var(--color-white);
-  /* line-height: 5; */
   text-align: center;
 }
 
 .logo{
   width: 50%;
-  /* vertical-align: middle; */
 }
 
 .main-nav{
@@ -64,7 +62,7 @@ a{
 
 .nav-container-link{
   color: var(--color-white);
-  display: block; /*para que abarque el ancho del contenedor y detecte el click*/
+  display: block;
   width: 100%;
 }
 
@@ -73,7 +71,6 @@ a{
   flex-direction: column;
   align-items: center;
   background-color: black;
-  /* flex-grow: 1; */
 }
 
 .main-container-section{
@@ -92,12 +89,10 @@ a{
 
 .main-container-grid{
   width: 90vw;
-  /* background-color: var(--color-aside); */
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* gap: 1rem; */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   color: var(--color-black);
   padding: 20px;
@@ -129,10 +124,10 @@ a{
 }
 
 .box:hover{
-  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -webkit-box-shadow:rgba(255, 208, 0,0.8) 0px 5px 15px, inset rgba(255, 208, 0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(255, 208, 0,0.8) 0px 5px 15px, inset rgba(255, 208, 0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(255, 208, 0,0.8) 0px 5px 15px, inset rgba(255, 208, 0,0.15) 0px -10px 20px;
+    box-shadow:rgba(255, 208, 0,0.8) 0px 5px 15px, inset rgba(255, 208, 0,0.15) 0px -10px 20px;
 }
 
 .box > img{
