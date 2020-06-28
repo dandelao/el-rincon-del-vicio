@@ -36,6 +36,7 @@ body{
 .main-nav{
   background-color: var(--color-nav);
   height: 50px;
+  width: 100%;
 } 
 
 .nav-container{
@@ -138,7 +139,8 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background: rgb(251,250,216);
+background: linear-gradient(0deg, rgba(251,250,216,1) 50%, rgba(242,239,161,0.8883753330433736) 100%);
 }
 
 .main-container-section{
@@ -211,4 +213,27 @@ a{
   line-height: 2.5;
   text-align: center;
   /* margin-top: auto; */
+}
+
+.separador{
+  width: 80%;
+  text-align: center;
+}
+.separador>h1{
+  margin-top: 27px;
+}
+
+.buscar{
+  display: flex;
+  /* width: 80%; */
+  margin-top: 5px;
+  justify-content: flex-end;
+  font-size: 1.3em;
+}
+
+input{
+  
+  width: 180px;
+  margin-left: 15px;
+  text-align: end;
 }
