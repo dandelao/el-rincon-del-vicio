@@ -96,7 +96,7 @@ a{
   align-items: center;
   text-align: center;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  background-color: coral;
+  background-color: lightblue;
   color: var(--color-black);
   padding: 20px;
 }
@@ -133,7 +133,7 @@ a{
   margin-top: 7px;
   justify-content: center;
   font-size: 1.2em;
-  background-color: coral;
+  background-color: lightblue;
   padding-top: 30px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
