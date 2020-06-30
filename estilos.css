@@ -25,10 +25,26 @@ body{
   font-family: 'Yantramanav', sans-serif;
 }
 
-.main-header{
-  background-color: var(--color-nav);
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.main-container-cover{
+  background-image: url(logos/marcopolo_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  width: 100vw;
+  background-color: var(--color-black);
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-white);
-  text-align: center;
 }
 
 .logo{
@@ -48,7 +64,6 @@ body{
   align-items: center;
 
 }
-
 .nav-container-item{
   text-decoration: none;
   color: white;
@@ -56,19 +71,9 @@ body{
   line-height: 2.5;
   flex-grow: 1;
 }
-
-ul{
-  height: 100%;
-}
-
 .nav-container-item:hover{
   background-color: cadetblue;
 }
-
-a{
-  color: white;
-}
-
 .nav-container-link{
   color: var(--color-white);
   display: block;
@@ -77,6 +82,80 @@ a{
   font-size: 1.2em;
 }
 
+ul{
+  height: 100%;
+}
+a{
+  color: white;
+}
+
+.main-container-grid{
+  width: 85vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  background-color: coral;
+  color: var(--color-black);
+  padding: 20px;
+}
+
+.box {
+  background-color: var(--color-aside);
+  margin: 15px;
+  border-radius: 10px;
+}
+.box:hover{
+  -webkit-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
+    box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
+    
+}
+.box > img{
+  width: 100%;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.titulo{
+  width: 80%;
+  text-align: center;
+}
+.titulo>h1{
+  margin-top: 27px;
+}
+
+.buscar{
+  display: flex;
+  width: 85vw;
+  margin-top: 7px;
+  justify-content: center;
+  font-size: 1.2em;
+  background-color: coral;
+  padding-top: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+input{
+  
+  width: 180px;
+  margin-left: 15px;
+  text-align: end;
+}
+
+.main-footer{
+  background-color: var(--color-nav);
+  color: var(--color-white);
+  line-height: 2.5;
+  text-align: center;
+  /* margin-top: auto; */
+}
+
+
+
+/* --------------------BOTON PARA MENU DESPLEGABLE */
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -89,154 +168,4 @@ a{
 
 #check{
   display: none;
-}
-@media (max-width: 768px){
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px){
-  .checkbtn{
-    display: block;
-    position: fixed;
-  }
-  .main-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 50px;
-  }
-  .nav-container{
-    display: block;
-    
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(243, 132, 4);
-    top: 50px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover, a.active{
-    background: rgb(243, 132, 4);
-    color: #FFC146;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-
-}
-
-.main-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-}
-
-.main-container-section{
-  background-image: url(logos/marcopolo_4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.9;
-  width: 100vw;
-  background-color: var(--color-black);
-  height: 55vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-white);
-}
-
-.main-container-grid{
-  width: 85vw;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  color: var(--color-black);
-  padding: 20px;
-}
-
-@media only screen and (max-width: 768px){
-  .logo{
-    width: 100%;
-  }
-
-  .main-container-section{
-    min-height: 30vh;
-  }
-
-  .main-container-grid{
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    padding: 5px;
-  }
-
-  .main-container-section{
-    height: 25vh;
-  }
-}
-
-.box {
-  background-color: var(--color-aside);
-  margin: 15px;
-  border-radius: 10px;
-}
-
-.box:hover{
-  -webkit-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
-    box-shadow:rgba(14, 141, 145,0.9) 0px 5px 15px, inset rgba(13, 108, 105,0.15) 0px -10px 20px;
-    
-}
-
-.box > img{
-  width: 100%;
-  border: solid 1px black;
-  border-radius: 10px;
-}
-
-.main-footer{
-  background-color: var(--color-nav);
-  color: var(--color-white);
-  line-height: 2.5;
-  text-align: center;
-  /* margin-top: auto; */
-}
-
-.separador{
-  width: 80%;
-  text-align: center;
-}
-.separador>h1{
-  margin-top: 27px;
-}
-
-.buscar{
-  display: flex;
-  /* width: 80%; */
-  margin-top: 5px;
-  justify-content: flex-end;
-  font-size: 1.3em;
-}
-
-input{
-  
-  width: 180px;
-  margin-left: 15px;
-  text-align: end;
 }
