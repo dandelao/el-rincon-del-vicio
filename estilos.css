@@ -97,9 +97,7 @@ body{
   line-height: 2.2;
   /* flex-grow: 1; */
 }
-.nav-container-item:hover{
-  /* background-color: cadetblue; */
-}
+
 .nav-container-link{
   color: white;
   display: inline-block;
