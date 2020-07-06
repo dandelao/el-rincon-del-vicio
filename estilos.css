@@ -259,7 +259,7 @@ input{
   }
 
   .nav-container-item:hover{
-    background-color: black;
+    color: cadetblue;
   }
 
   .buscar{
