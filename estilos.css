@@ -206,8 +206,8 @@ input{
 .logoResponsive img{
   position: relative;
   width: 250px;
-  top: -5px;
-  left: 35px;
+  top: -7px;
+  left: -10px;
 }
 
 .menu-toggle{
