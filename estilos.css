@@ -261,11 +261,6 @@ input{
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
-  .nav-container-item:hover{
-    color: cadetblue;
-    background-color: black;
-  }
-
   .buscar{
     width: 90vw;
   }
