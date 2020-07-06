@@ -260,6 +260,7 @@ input{
 
   .nav-container-item:hover{
     color: cadetblue;
+    background-color: black;
   }
 
   .buscar{
