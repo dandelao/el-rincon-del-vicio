@@ -204,9 +204,8 @@ input{
   display: none;
 }
 .logoResponsive img{
-  width: 10em;
-  height: 3em;
-  justify-content: center;
+  position: relative;
+  top: -18px;
 }
 
 .menu-toggle{
