@@ -25,12 +25,11 @@ body{
 }
 
 .main-container{
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin: auto;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  width: 100%;
 }
-
 .main-container-cover{
   background-image: url(logos/marcopolo_4.jpg);
   background-size: cover;
@@ -52,46 +51,69 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .logo{
   display: block;
   width: 60em;
 }
+.registerbtn{
+  font-size: 1.3em;
+  color: white;
+  width: 7em;
+  height: 2em;
+  background-color: blue;
+  border-color: black;
+  border-style: ridge;
+  border-radius: 25px;
+  margin-top: -15px;
+}
+.registerbtn:hover{
+  background-color: cadetblue;
+  border-style: ridge;
+}
 
 .main-nav{
   background-color: black;
-  height: 2.2em;
+  height: 3em;
   width: 100%;
+  display: flex;
+  padding: 0 20px;
+  justify-content: ;
+  /* margin-left: auto; */
 } 
-
 .nav-container{
   display: flex;
+  width: 100%;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
   align-items: center;
-
 }
 .nav-container-item{
+  display: inline-block;
+  position: relative;
   text-decoration: none;
   color: white;
   text-align: center;
   line-height: 2.2;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .nav-container-item:hover{
   background-color: cadetblue;
 }
 .nav-container-link{
   color: var(--color-white);
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 100%;
 }
 
-ul{
-  height: 100%;
+.contenido{
+  margin: auto;
 }
-a{
-  color: white;
+
+header{
+  display: flex;
+  height: 3em;
 }
 
 .main-container-grid{
@@ -160,7 +182,6 @@ input{
 }
 
 
-
 /* --------------------BOTON PARA MENU DESPLEGABLE */
 .checkbtn{
   font-size: 30px;
@@ -176,20 +197,55 @@ input{
   display: none;
 }
 
+.logoResponsive{
+  display: none;
+}
+.logoResponsive img{
+  width: 10em;
+  height: 3em;
+  justify-content: center;
+}
 
-.registerbtn{
-  font-size: 1.3em;
+.menu-toggle{
+  display: none;
+  margin-left: auto;
   color: white;
-  width: 7em;
-  height: 2em;
-  background-color: blue;
-  border-color: black;
-  border-style: ridge;
-  border-radius: 25px;
-  margin-top: -15px;
+  line-height: 3em;
+  /* font-size: 25px; */
+  cursor: pointer;
 }
 
-.registerbtn:hover{
-  background-color: cadetblue;
-  border-style: ridge;
+.show{
+  height: 305px !important;
+  width: 100%;
 }
+
+/* ----------------------------------------QUERYS */
+@media screen and (max-width:700px) {
+  .main-container-cover{
+    display: none;
+  }
+  .logoResponsive{
+    display: flex;
+  }
+  .menu-toggle{
+    display: block;
+  }
+
+  .main-nav{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s ease-out;
+  }
+  .nav-container{
+    display: block;
+    
+  }
+  .nav-container-item{
+    display: block;
+    /* top: 3em; */
+    background-color: black;
+  }
+} /* for smaller tablets */
