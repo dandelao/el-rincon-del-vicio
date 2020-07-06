@@ -251,4 +251,13 @@ input{
     /* top: 3em; */
     background-color: black;
   }
+
+  .main-container-grid{
+    width: 90vw;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .buscar{
+    width: 90vw;
+  }
 } /* for smaller tablets */
