@@ -85,7 +85,7 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .nav-container-item{
@@ -98,13 +98,16 @@ body{
   /* flex-grow: 1; */
 }
 .nav-container-item:hover{
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 .nav-container-link{
-  color: var(--color-white);
+  color: white;
   display: inline-block;
   position: relative;
   width: 100%;
+}
+.nav-container-link:hover{
+  color: aquamarine;
 }
 
 .contenido{
